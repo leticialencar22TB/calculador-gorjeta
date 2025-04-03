@@ -145,6 +145,10 @@ main{
             color: var(--sherpa-blue);
             font-weight: 700;
         }
+
+        .button selected {
+            background: var(--topaz);
+        }
     }
     input::-webkit-inner-spin-button,
         input::-webkit-outer-spin-button{

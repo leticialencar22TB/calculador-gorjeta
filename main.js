@@ -22,7 +22,9 @@ function receiveNumberOfPeopleValue{
 }
 
 function receiveTipPercentageValue(value){
-    buttonSelected = dcument.querySelector("")
+    tipPercentage = value / 100
+    console.log(tipPercentage)
+
 }
 function calculate() {
     if(bill !== 0 && tipPercentage !== 0 && numberOfPeople !== 0){
