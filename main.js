@@ -23,9 +23,18 @@ function receiveNumberOfPeopleValue{
 
 function receiveTipPercentageValue(value){
     tipPercentage = value / 100
-    console.log(tipPercentage)
-
+    buttonSelected = document.querySelector(`#button-${value}`)
+    buttonSelected.classList.add("button-selected")
+    removeClassButtonSelected()
 }
+
+function removeClassButtonSelected() {
+    if(buttonSelected !== null){
+        buttonSelected.classList.remove("button-selected")
+        buttonSelected = null
+    }
+}
+
 function calculate() {
     if(bill !== 0 && tipPercentage !== 0 && numberOfPeople !== 0){
         console.log("é possível calcular")
